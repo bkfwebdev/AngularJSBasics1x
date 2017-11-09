@@ -1,8 +1,8 @@
 [
-    {name:"buy a subaru crosstrek"},
-    {name:"get an awesome job as a web developer"},
-    {name:"buy winter shoes"},
-    {name:"buy christmas gifts"},
-    {name:"some other stuff"},
-    {name:"and some other other stuff"}
+{"name":"buy a subaru crosstrek"},
+{"name":"get an awesome job as a web developer"},
+{"name":"buy winter shoes"},
+ {"name":"buy christmas gifts"},
+ {"name":"some other stuff"},
+ {"name":"and some other other stuff"}
 ]
