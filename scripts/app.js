@@ -8,16 +8,18 @@ angular.module("todoListApp", [])
     $scope.todos = response.data;
     });
 
-    $scope.deleteTodo = function(todo){
-        dataService.deleteTodo(todo);
-        console.dir(todo.name);
-        console.log("you should see some data here");
+    $scope.deleteTodo = function(todo, $index){
+        dataService.deleteTodo(todo.name);
+       // console.dir(todo.name);
+       // console.log($index);
+       // console.log("you should see some data here");
     }
 
-    $scope.saveTodo = function(todo){
+    $scope.saveTodo = function(todo, $index){
         dataService.saveTodo(todo.name);
-        console.dir(todo.name)
-        console.log("you should see some data here too");
+        // console.dir(todo.name)
+        // console.log($index)
+        // console.log("you should see some data here too");
     }
 
 })
@@ -27,13 +29,13 @@ this.getTodos = function (callback){
     $http.get("./mock/todos.json").then(callback);
 };
 
-this.deleteTodo = function(todo){
-    console.log("the "+ todo.name +" has been deleted!");
-    console.dir(todo);
+this.deleteTodo = function(todo,$index){
+    console.log("the "+ todo +" todo has been deleted!");
+    console.log($index);
     }
 
-this.saveTodo = function(todo){
-    console.log("the "+ todo.name +" has been saved!");
-    console.dir(todo);
+this.saveTodo = function(todo,$index){
+    console.log("the "+ todo +" todo has been saved!");
+    console.log($index);
 }
 })
