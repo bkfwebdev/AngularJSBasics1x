@@ -1,4 +1,4 @@
- angular.module("todoListApp", [])
+angular.module("todoListApp", [])
 
 .controller("mainCtrl",function($scope, dataService){
 
@@ -16,7 +16,7 @@
 
     $scope.saveTodo = function(todo){
         dataService.saveTodo(todo.name);
-        console.dir(todo)
+        console.dir(todo.name)
         console.log("you should see some data here too");
     }
 
