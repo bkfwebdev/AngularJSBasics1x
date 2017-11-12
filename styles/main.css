@@ -1,9 +1,3 @@
-
-/*h1 {
-  margin-left:53%;
-  margin-right:33%;
-}*/
-
 body {
   color: #2d3339;
   font-family: "Varela Round";
@@ -60,10 +54,10 @@ a {
   .list .add {
     padding: 25px 0 27px 25px; }
 
-/* input[type="checkbox"] {
+ input[type="checkbox"] {
     display:none;
 }
-*/
+
 input[type="checkbox"] + span {
     display:inline-block;
     width:19px;
