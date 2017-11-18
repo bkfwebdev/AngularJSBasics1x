@@ -8,9 +8,9 @@ angular.module("todoListApp")
         $scope.todos = response.data;
         });
     
-        $scope.addTodo = function(){
-            var todo = {name:"a new todo for you "};
-            $scope.todos.unshift(todo);
+        $scope.addTodo = function(newTodo){
+            let newObject = {name:newTodo}
+            $scope.todos.unshift(newObject);
         }
     
         $scope.deleteTodo = function(todo, $index){
