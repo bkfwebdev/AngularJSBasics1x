@@ -1,8 +1,8 @@
 "use strict";
 var express = require("express");
-var todos = require("../../mock/todos");
+var todos = require("../../public/mock/todos.json");
 var router = express.Router();
-router.get("/todos", function(){
+router.get("/todos", function(req,res){
     res.json({todos:todos});
 })
 // todo add post route
