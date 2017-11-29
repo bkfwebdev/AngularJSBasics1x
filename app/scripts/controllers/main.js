@@ -5,7 +5,8 @@ angular.module("todoListApp")
         dataService.getTodos(function(response){
         // console.log("attempting to get data");     
         // console.log(response.data);
-        $scope.todos = response.data.todos;
+        var todos = response.data.todos;
+        $scope.todos = todos;
         });
     
         $scope.addTodo = function(newTodo){
